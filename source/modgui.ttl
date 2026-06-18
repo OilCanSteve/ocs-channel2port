@@ -6,6 +6,7 @@
         modgui:resourcesDirectory <modgui> ;
         modgui:iconTemplate <modgui/icon-oilcan-channel2port.html> ;
         modgui:stylesheet <modgui/stylesheet-oilcan-channel2port.css> ;
+        modgui:javascript <modgui/channel2port.js> ;
         modgui:screenshot <modgui/screenshot-oilcan-channel2port.png> ;
         modgui:thumbnail <modgui/thumbnail-oilcan-channel2port.png> ;
         modgui:brand "Oil Can" ;

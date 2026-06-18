@@ -45,6 +45,34 @@
     top: 66px;
 }
 
+.mod-pedal-boxy{{{cns}}} .mod-pedal-output .mod-output {
+    overflow: visible;
+    position: relative;
+}
+
+.mod-pedal-boxy{{{cns}}} .mod-pedal-output .mod-output .mod-output-channel-readout {
+    background: #ffeb3b;
+    border: 1px solid #000;
+    border-radius: 3px;
+    color: #000;
+    display: block;
+    font-family: "Questrial";
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1;
+    width: 2ch;
+    padding: 2px;
+    pointer-events: auto;
+    position: absolute;
+    left: -30px;
+    cursor: text;
+    text-align: left;
+    top: 50%;
+    transform: translateY(-50%);
+    user-select: text;
+    z-index: 120;
+}
+
 /* = PLUGIN'S AUTHOR
 ================================================ */
 .mod-pedal-boxy{{{cns}}} .mod-plugin-brand {
