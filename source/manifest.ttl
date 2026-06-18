@@ -4,7 +4,7 @@
 
 <https://github.com/stivb/oilcan_plugins/ocs-channel2port> a lv2:Plugin ;
     lv2:binary <ocs-channel2port.so> ;
-    rdfs:seeAlso <ocs-channel2port.ttl> .
-    <https://github.com/stivb/oilcan_plugins/ocs-channel2port> rdfs:seeAlso <modgui.ttl>.
+    rdfs:seeAlso <ocs-channel2port.ttl> ,
+                 <modgui.ttl> .
 
 
