@@ -2,7 +2,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix ui:   <http://lv2plug.in/ns/extensions/ui#> .
 
-<https://github.com/stivb/oilcan_plugins/ocs-channel2port> a lv2:Plugin ;
+<https://github.com/OilCanSteve/ocs-channel2port> a lv2:Plugin ;
     lv2:binary <ocs-channel2port.so> ;
     rdfs:seeAlso <ocs-channel2port.ttl> ,
                  <modgui.ttl> .

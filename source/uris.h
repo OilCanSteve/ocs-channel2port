@@ -9,7 +9,7 @@
 #include "lv2/patch/patch.h"
 #include "lv2/urid/urid.h"
 
-#define CHN2PATH_URI "https://github.com/stivb/oilcan_plugins/ocs-channel2port"
+#define CHN2PATH_URI "https://github.com/OilCanSteve/ocs-channel2port"
 
 typedef struct {
   LV2_URID atom_Path;

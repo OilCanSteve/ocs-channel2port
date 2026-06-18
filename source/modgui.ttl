@@ -1,7 +1,7 @@
 @prefix modgui: <http://moddevices.com/ns/modgui#> .
 @prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
 
-<https://github.com/stivb/oilcan_plugins/ocs-channel2port>
+<https://github.com/OilCanSteve/ocs-channel2port>
     modgui:gui [
         modgui:resourcesDirectory <modgui> ;
         modgui:iconTemplate <modgui/icon-oilcan-channel2port.html> ;
@@ -15,19 +15,19 @@
         modgui:color "pink" ;
         modgui:knob "copper" ;
         modgui:port [
-            lv2:index 1 ;
+            lv2:index 0 ;
             lv2:symbol "ChannelA" ;
             lv2:name "ChannelA" ;
         ], [
-            lv2:index 2 ;
+            lv2:index 1 ;
             lv2:symbol "ChannelB" ;
             lv2:name "ChannelB" ;
         ], [
-            lv2:index 3 ;
+            lv2:index 2 ;
             lv2:symbol "ChannelC" ;
             lv2:name "ChannelC" ;
         ], [
-            lv2:index 4 ;
+            lv2:index 3 ;
             lv2:symbol "ChannelD" ;
             lv2:name "ChannelD" ;
         ] ;

@@ -7,12 +7,12 @@
 @prefix pprops: <http://lv2plug.in/ns/ext/port-props#> .
 @prefix foaf:   <http://xmlns.com/foaf/0.1/> .
 
-<https://github.com/stivb/oilcan_plugins/ocs-channel2port>
+<https://github.com/OilCanSteve/ocs-channel2port>
     a lv2:Plugin ;
     doap:name "OilCan channel2port" ;
     lv2:minorVersion 0 ;
     lv2:microVersion 23 ;
-    lv2:project <https://github.com/stivb/oilcansteve> ;
+    lv2:project <https://github.com/OilCanSteve> ;
     doap:license "GPLv3" ;
     doap:developer [
         foaf:name "Oil Can Steve" ;
@@ -29,7 +29,7 @@
         lv2:symbol "in" ;
         lv2:name "In" ;
     ], [
-        a lv2:ControlPort ;
+        a lv2:InputPort, lv2:ControlPort ;
         lv2:index 1 ;
         lv2:symbol "ChannelA" ;
         lv2:name "ChannelA" ;
@@ -38,7 +38,7 @@
         lv2:maximum 15 ;
         lv2:portProperty lv2:integer ;
     ], [
-        a lv2:ControlPort ;
+        a lv2:InputPort, lv2:ControlPort ;
         lv2:index 2 ;
         lv2:symbol "ChannelB" ;
         lv2:name "ChannelB" ;
@@ -47,7 +47,7 @@
         lv2:maximum 15 ;
         lv2:portProperty lv2:integer ;
     ], [
-        a lv2:ControlPort ;
+        a lv2:InputPort, lv2:ControlPort ;
         lv2:index 3 ;
         lv2:symbol "ChannelC" ;
         lv2:name "ChannelC" ;
@@ -56,7 +56,7 @@
         lv2:maximum 15 ;
         lv2:portProperty lv2:integer ;
     ], [
-        a lv2:ControlPort ;
+        a lv2:InputPort, lv2:ControlPort ;
         lv2:index 4 ;
         lv2:symbol "ChannelD" ;
         lv2:name "ChannelD" ;
