@@ -1,0 +1,110 @@
+@prefix atom:  <http://lv2plug.in/ns/ext/atom#> .
+@prefix doap:  <http://usefulinc.com/ns/doap#> .
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix urid:  <http://lv2plug.in/ns/ext/urid#> .
+@prefix midi:  <http://lv2plug.in/ns/ext/midi#> .
+@prefix units: <http://lv2plug.in/ns/extensions/units#> .
+@prefix pprops: <http://lv2plug.in/ns/ext/port-props#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<https://github.com/stivb/oilcan_plugins/chn2path>
+	a lv2:Plugin ;
+	doap:name "OilCan Channel2Path" ;
+	lv2:minorVersion 0 ;
+	lv2:microVersion 23 ;
+	lv2:project <https://github.com/stivb/oilcansteve>;
+	doap:license "GPLv3" ;
+
+	doap:developer [
+	foaf:name "Oil Can Steve";
+	foaf:homepage <https://oilcansteve.uk>;
+	foaf:mbox <mailto:oilcansteve@hotmail.com>;
+	];
+
+	lv2:requiredFeature urid:map ;
+	lv2:optionalFeature lv2:hardRTCapable ;
+	lv2:port [
+		a lv2:InputPort ,
+			atom:AtomPort ;
+		atom:bufferType atom:Sequence ;
+		atom:supports midi:MidiEvent ;
+		lv2:index 0 ;
+		lv2:symbol "in" ;
+		lv2:name "In"
+	],
+	[
+ a lv2:InputPort , lv2:ControlPort ;
+ lv2:index 1 ;
+ lv2:symbol "InChannel1" ;
+ lv2:name "InChannel1" ; 
+ lv2:default  9 ; 
+ lv2:minimum -1 ; 
+ lv2:maximum 15;
+ lv2:portProperty lv2:integer;
+ ],
+ [
+ a lv2:InputPort , lv2:ControlPort ;
+ lv2:index 2 ;
+ lv2:symbol "InChannel2" ;
+ lv2:name "InChannel2" ; 
+ lv2:default  0 ; 
+ lv2:minimum -1 ; 
+ lv2:maximum 15;
+ lv2:portProperty lv2:integer;
+ ],
+ [
+ a lv2:InputPort , lv2:ControlPort ;
+ lv2:index 3 ;
+ lv2:symbol "InChannel3" ;
+ lv2:name "InChannel3" ; 
+ lv2:default  -1 ; 
+ lv2:minimum -1 ; 
+ lv2:maximum 15;
+ lv2:portProperty lv2:integer;
+ ] ,
+ [
+ a lv2:InputPort , lv2:ControlPort ;
+ lv2:index 4 ;
+ lv2:symbol "InChannel4" ;
+ lv2:name "InChannel4" ; 
+ lv2:default  -1 ; 
+ lv2:minimum -1 ; 
+ lv2:maximum 15;
+ lv2:portProperty lv2:integer;
+ ],
+ [
+ a lv2:OutputPort ,
+ atom:AtomPort ;
+ atom:bufferType atom:Sequence ;
+ atom:supports midi:MidiEvent ;
+ lv2:index 5 ;
+ lv2:symbol "OutChannel1" ;
+ lv2:name "OutChannel1"
+ ],
+ [
+ a lv2:OutputPort ,
+ atom:AtomPort ;
+ atom:bufferType atom:Sequence ;
+ atom:supports midi:MidiEvent ;
+ lv2:index 6 ;
+ lv2:symbol "OutChannel2" ;
+ lv2:name "OutChannel2"
+ ],
+ [
+ a lv2:OutputPort ,
+ atom:AtomPort ;
+ atom:bufferType atom:Sequence ;
+ atom:supports midi:MidiEvent ;
+ lv2:index 7 ;
+ lv2:symbol "OutChannel3" ;
+ lv2:name "OutChannel3"
+ ],
+ [
+ a lv2:OutputPort ,
+ atom:AtomPort ;
+ atom:bufferType atom:Sequence ;
+ atom:supports midi:MidiEvent ;
+ lv2:index 8 ;
+ lv2:symbol "OutChannel4" ;
+ lv2:name "OutChannel4"
+ ].

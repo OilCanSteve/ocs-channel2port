@@ -1,0 +1,34 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<https://github.com/stivb/oilcan_plugins/chn2path>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-oilcan-channel2path.html> ;
+        modgui:stylesheet <modgui/stylesheet-oilcan-channel2path.css> ;
+        modgui:screenshot <modgui/screenshot-oilcan-channel2path.png> ;
+        modgui:thumbnail <modgui/thumbnail-oilcan-channel2path.png> ;
+        modgui:brand "Oil Can" ;
+        modgui:label "Channel2Port" ;
+        modgui:model "boxy" ;
+        modgui:panel "4-knobs" ;
+        modgui:color "pink" ;
+        modgui:knob "copper" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "InChannel1" ;
+            lv2:name "A" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "InChannel2" ;
+            lv2:name "B" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "InChannel3" ;
+            lv2:name "C" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "InChannel4" ;
+            lv2:name "D" ;
+        ] ;
+    ] .
