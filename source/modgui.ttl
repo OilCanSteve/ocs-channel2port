@@ -1,13 +1,13 @@
 @prefix modgui: <http://moddevices.com/ns/modgui#> .
 @prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
 
-<https://github.com/stivb/oilcan_plugins/chn2path>
+<https://github.com/stivb/oilcan_plugins/ocs-channel2port>
     modgui:gui [
         modgui:resourcesDirectory <modgui> ;
-        modgui:iconTemplate <modgui/icon-oilcan-channel2path.html> ;
-        modgui:stylesheet <modgui/stylesheet-oilcan-channel2path.css> ;
-        modgui:screenshot <modgui/screenshot-oilcan-channel2path.png> ;
-        modgui:thumbnail <modgui/thumbnail-oilcan-channel2path.png> ;
+        modgui:iconTemplate <modgui/icon-oilcan-channel2port.html> ;
+        modgui:stylesheet <modgui/stylesheet-oilcan-channel2port.css> ;
+        modgui:screenshot <modgui/screenshot-oilcan-channel2port.png> ;
+        modgui:thumbnail <modgui/thumbnail-oilcan-channel2port.png> ;
         modgui:brand "Oil Can" ;
         modgui:label "Channel2Port" ;
         modgui:model "boxy" ;

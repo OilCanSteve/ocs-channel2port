@@ -9,7 +9,7 @@
 
 <https://github.com/stivb/oilcan_plugins/chn2path>
 	a lv2:Plugin ;
-	doap:name "OilCan Channel2Path" ;
+	doap:name "OilCan channel2port" ;
 	lv2:minorVersion 0 ;
 	lv2:microVersion 23 ;
 	lv2:project <https://github.com/stivb/oilcansteve>;
